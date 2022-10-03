@@ -1,51 +1,49 @@
 const Employee = require("../lib/Employee");
 
-test("Can create an new employee.", () => {
+it("Can create an new employee.", () => {
     const employee = new Employee();
     expect(typeof (employee)).toBe("object");
 })
 
-test("Testing name.", () => {
-    const name = "James";
+it("Testing name.", () => {
+    const name = "Mia";
     const employee = new Employee(name);
     expect(employee.name).toBe(name);
 })
 
-test("Testing ID.", () => {
+it("Testing ID.", () => {
     const id = 2;
-    const employee = new Employee("James", id);
+    const employee = new Employee("Mia", id);
     expect(employee.id).toBe(id);
 })
 
-test("Testing email.", () => {
-    const email = "jamesljenks@gmail.com";
-    const employee = new Employee("James", 2, email);
+it("Testing email.", () => {
+    const email = "mia123@gmail.com";
+    const employee = new Employee("Mia", 2, email);
     expect(employee.email).toBe(email);
 })
 
-
-
-test("Gets name through getName method.", () => {
+it("Gets name through getName method.", () => {
     const testName = "James";
     const employee = new Employee(testName);
     expect(employee.getName()).toBe(testName);
 })
 
-test("Can test ID through getID method.", () => {
+it("Can test ID through getID method.", () => {
     const testID = 2;
-    const employee = new Employee("James", testID);
+    const employee = new Employee("Mia", testID);
     expect(employee.getId()).toBe(testID);
 })
 
-test("Can test email through getEmail method.", () => {
-    const testEmail = "jamesljenks@gmail.com";
-    const employee = new Employee("James", 2, testEmail);
+it("Can test email through getEmail method.", () => {
+    const testEmail = "mia123@gmail.com";
+    const employee = new Employee("Mia", 2, testEmail);
     expect(employee.getEmail()).toBe(testEmail);
 })
 
-test("Testing role.", () => {
+it("Testing role.", () => {
     const returnValue = "Employee";
-    const employee = new Employee("James", 2, "jamesljenks@gmail.com");
+    const employee = new Employee("Mia", 2, "mia123@gmail.com");
     expect(employee.getRole()).toBe(returnValue);
 })
 
