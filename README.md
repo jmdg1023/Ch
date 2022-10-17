@@ -5,7 +5,7 @@
 
 ## Links to Repo and deployment📌
 
-🔸 GitHub Repository [link](https://github.com/Changeling010)
+🔸 GitHub Repository [link](https://github.com/jmdg1023/Changeling010)
 
 
 
